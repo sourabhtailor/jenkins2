@@ -3,5 +3,14 @@
 function exampleFunction() {
     $a = 1;
     $b = 2;
-    return $a + $b; // Simple function, could trigger an issue based on complexity
+    $result = 0;
+    
+    // Adding unnecessary conditions to increase complexity
+    if ($a > 0) {
+        $result += $a;
+    }
+    if ($b > 0) {
+        $result += $b;
+    }
+    return $result;
 }
