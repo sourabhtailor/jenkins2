@@ -1,16 +1,14 @@
 <?php
 // File: src/Example.php
-function exampleFunction() {
-    $a = 1;
-    $b = 2;
+
+function longFunction() {
     $result = 0;
-    
-    // Adding unnecessary conditions to increase complexity
-    if ($a > 0) {
-        $result += $a;
+    for ($i = 0; $i < 1000; $i++) {
+        $result += $i;
     }
-    if ($b > 0) {
-        $result += $b;
-    }
+    $result = $result * 2;
+    $result = $result - 500;
+    $result = $result / 2;
+    $result = $result + 1000;
     return $result;
 }
